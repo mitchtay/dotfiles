@@ -1,8 +1,7 @@
 call plug#begin('~/.config/nvim/plugged')
 
 Plug 'ianks/gruvbox'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+Plug 'itchyny/lightline.vim'
 
 Plug 'scrooloose/nerdtree'
 
@@ -68,43 +67,8 @@ function! ToggleRelativeNumberMode()
 endfunc
 
 nnoremap <leader>r :call ToggleRelativeNumberMode() <CR>
-nmap <leader>t1 <Plug>AirlineSelectTab1 
-nmap <leader>t2 <Plug>AirlineSelectTab2 
-nmap <leader>t3 <Plug>AirlineSelectTab3 
-nmap <leader>t4 <Plug>AirlineSelectTab4 
-nmap <leader>t5 <Plug>AirlineSelectTab5 
-nmap <leader>t6 <Plug>AirlineSelectTab6 
-nmap <leader>t7 <Plug>AirlineSelectTab7 
-nmap <leader>t8 <Plug>AirlineSelectTab8 
-nmap <leader>t9 <Plug>AirlineSelectTab9 
-nmap <leader>tp <Plug>AirlineSelectPrevTab
-nmap <leader>tn <Plug>AirlineSelectNextTab
-
-tmap <leader>t1 <Plug>AirlineSelectTab1 
-tmap <leader>t2 <Plug>AirlineSelectTab2 
-tmap <leader>t3 <Plug>AirlineSelectTab3 
-tmap <leader>t4 <Plug>AirlineSelectTab4 
-tmap <leader>t5 <Plug>AirlineSelectTab5 
-tmap <leader>t6 <Plug>AirlineSelectTab6 
-tmap <leader>t7 <Plug>AirlineSelectTab7 
-tmap <leader>t8 <Plug>AirlineSelectTab8 
-tmap <leader>t9 <Plug>AirlineSelectTab9 
-tmap <leader>tp <Plug>AirlineSelectPrevTab
-tmap <leader>tn <Plug>AirlineSelectNextTab
 
 tnoremap <ESC>	<C-\><C-N>
-
-let g:airline#extensions#tabline#enabled = 2
-let g:airline#extensions#tabline#fnamemod = ':t'
-let g:airline#extensions#tabline#left_sep = ' '
-let g:airline#extensions#tabline#left_alt_sep = '|'
-let g:airline#extensions#tabline#right_sep = ' '
-let g:airline#extensions#tabline#right_alt_sep = '|'
-let g:airline_left_sep = ' '
-let g:airline_left_alt_sep = '|'
-let g:airline_right_sep = ' '
-let g:airline_right_alt_sep = '|'
-let g:airline_theme = 'gruvbox'
 
 set fileencoding=utf-8
 set fileformat=unix
